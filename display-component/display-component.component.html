@@ -1,0 +1,31 @@
+<h2>Validation History </h2>
+<table class="table table-striped">
+ 	<thead>
+     <tr>
+     	<th>valid</th>
+      <th>number</th>
+     <th>local_format</th>
+     <th>international_format</th>
+     <th>country_prefix</th>
+     <th>country_code</th>
+     <th>country_name</th>
+     <th>location</th>
+     <th>carrier</th>
+     <th>line_type</th>
+     </tr>
+     </thead>	
+     <tbody>   
+     	<tr *ngFor="let res  of apiresultList">
+     	 	<td>{{res.valid}}</td>
+     	 	<td>{{res.number}}</td>
+     	 	<td>{{res.local_format}}</td>
+        <td>{{res.international_format}}</td>
+        <td>{{res.country_prefix}}</td>
+        <td>{{res.country_code}}</td>
+        <td>{{res.country_name}}</td>
+        <td>{{res.location}}</td>
+        <td>{{res.carrier}}</td>
+        <td>{{res.line_type}}</td>          
+     	</tr>
+     </tbody>	
+</table>
